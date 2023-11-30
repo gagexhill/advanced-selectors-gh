@@ -1,41 +1,81 @@
-header {
-    text-decoration: underline;
-}
-
-/*attribute selectors*/
-body {
-    background-color: rgba(27, 27, 50, 0.8);
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-a[h1] {
-    color: white;
-}
-
-a[href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"], [href="https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors"] {
-    color: burlywood;
-    font-size: 2em;
-    font-style: italic;
+.whole-body {
+    margin: 0 auto;
+    width: 500px;
 }
 
 /*nav*/
-.nav {
-    border: 2px solid antiquewhite;
+nav {
+    border-bottom: 2px solid antiquewhite;
     padding: 10px;
 }
 
-a[href="#attribute-selectors"] {
+a[href="#attribute-selectors"], [href="#class-selectors"], [href="#id-selectors"], h1 {
     color: antiquewhite;
+    font-weight: 200;
 }
 
-a[href="#class-selectors"] {
-    color: antiquewhite;
+.nav-border {
+    padding: 1px;
+    font-weight: 200;
+    align-items: auto;
+    margin: 1rem;
 }
 
-/*class selectors*/
+/*body*/
+.frame {
+    max-width: 500px;
+    min-width: 300px;
+}
+
+body {
+    background-color: rgba(14, 14, 39, 0.8);
+    color: white;
+    width: 500px;
+    border: 2px solid antiquewhite;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 200;
+}
+
+header {
+    text-decoration: underline;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    margin-left: 10px;
+    font-weight: 200;
+}
+
+.description {
+    margin-left: 10px;
+    text-align: left;
+    font-size: 1.125rem;
+    font-weight: 200;
+}
+
+a[href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"], [href="https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors"], [href="https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors"] {
+    color: burlywood;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 200;
+}
+
 .li-line {
     color: burlywood;
     margin:0 0 10px 0;
 }
 
+.space-li {
+    margin:0 0 10px 0;
+}
+
+/*footer*/
+footer {
+    border-top: 2px solid antiquewhite;
+    text-align: center;
+    margin: 1rem;
+}
+
+a[href="https://github.com/gagexhill"] {
+    color: burlywood;
+}

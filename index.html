@@ -1,68 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Advanced Selectors</title>
-    <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
-    <section>
-        <nav class="nav" name="nav">
-            <a href="#attribute-selectors">Attribute Selectors</a>
-            <a href="#class-selectors">Class Selectors</a>
-        </nav>
-    </section>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Advanced Selectors</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+       <div class="whole-body">
+            <div class="nav-border" name="nav-border">
+                <nav id="nav" name="nav">
+                    <a href="#attribute-selectors">Attribute Selectors</a>
+                    <a href="#class-selectors">Class Selectors</a>
+                    <a href="#id-selectors">ID Selectors</a>
+                </nav>
+            </div>
 
-    <article>
-        <header class="header" name="header">
-            <h1 id="attribute-selectors">Attribute Selectors</h1>
-        </header>
-        <ul>
-            <li>The CSS<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors" target="_blank" rel="noopener noreferrer" >attribute selector</a> matches elements based on the element having a given attribute explicitly set, with options for defining an attribute value or substring value match.</li>
-            <li>CSS Attribute examples</li>
-                <ul>
-                <li class="li-line" name="li-line">
-                    a[title] {color: purple;}
-                </li>
-                <li class="li-line" name="li-line">
-                    a[href="https://example.org"] {color: green;}
-                </li>
-                <li class="li-line" name="li-line">
-                    a[href*="example"] {font-size: 2em;}
-                </li>
-                <li class="li-line" name="li-line">
-                    a[href$=".org" i] {font-style: italic;}
-                </li>
-                <li class="li-line" name="li-line">
-                    a[class~="logo"] {padding: 2px;}
-                </li>
-            </ul>
-        </ul>
-    </article>
-
-    <article>
-        <header class="header" name="header">
-            <h1 id="Class_selectors">Class Selectors</h1>
-        </header>
-        <ul>
-            <li>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors" target="_blank" rel="noopener noreferrer">class selector</a> matches elements based on the contents of their class attribute.
-              <li>CSS Class examples</li>  
-            </li>
+            <div class="frame" name="frame">
+            <header class="header" name="header">
+                <h1 id="attribute-selectors" name="attribute-selectors">Attribute   Selectors</h1>
+            </header>
+            <blockquote class="description">The CSS <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors" target="_blank" rel="noopener noreferrer">attribute selector</a> matches elements based on the element having a given attribute explicitly set, with options for defining an attribute value or substring value match.
+            </blockquote>
             <ul>
-                <li class="li-line" name="li-line">
-                    .spacious {margin: 2em;}
-                </li>
-                <li class="li-line" name="li-line">
-                    li.spacious {margin: 2em;}
-                </li>
-                <li class="li-line" name="li-line">
-                    li.spacious.elegant {margin: 2em;}
-                </li>
+                <li class="space-li" name="space-li">CSS Attribute examples:</li>
+                <ul>
+                    <li class="li-line" name="li-line">
+                        a[title] {color: purple;}
+                    </li>
+                    <li class="li-line" name="li-line">
+                        a[href="https://example.org"] {color: green;}
+                    </li>
+                    <li class="li-line" name="li-line">
+                        a[href*="example"] {font-size: 2em;}
+                    </li>
+                    <li class="li-line" name="li-line">
+                        a[href$=".org" i] {font-style: italic;}
+                    </li>
+                    <li class="li-line" name="li-line">
+                        a[class~="logo"] {padding: 2px;}
+                    </li>
+                </ul>
             </ul>
-        </ul>
-    </article>
-</body>
-</html>
-</body>
+            </div>
+
+            <div class="frame" name="frame">
+            <header class="header" name="header">
+                <h1 id="class-selectors" name="class-selectors">Class Selectors</h1>
+            </header>
+            <blockquote class="description">The CSS <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors" target="_blank" rel="noopener noreferrer">class selector</a>  matches elements based on the contents of their class attribute.
+            </blockquote>
+            <ul>
+                <li class="space-li" name="space-li">CSS Class examples:</li>
+                <ul>
+                    <li class="li-line" name="li-line">
+                        .spacious {margin: 2em;}
+                    </li>
+                    <li class="li-line" name="li-line">
+                        li.spacious {margin: 2em;}
+                    </li>
+                    <li class="li-line" name="li-line">
+                        li.spacious.elegant {margin: 2em;}
+                    </li>
+                </ul>
+            </ul>
+             </div>
+
+             <div>
+                <header class="header" name="header">
+                    <h1 id="id-selectors" name="id-selectors">ID Selectors</h1>
+                </header>
+                <blockquote class="description">The CSS <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors" target="_blank" rel="noopener noreferrer">ID selectors</a> matches an element based on the value of the element's id attribute. In order for the element to be selected, its id attribute must match exactly the value given in the selector.
+                </blockquote>
+                <ul>
+                    <li class="space-li" name="space-li">...</li>
+                    <ul>
+                        <li class="li-line" name="li-line">
+                            ...
+                        </li>
+                        <li class="li-line" name="li-line">
+                            ...
+                        </li>
+                        <li class="li-line" name="li-line">
+                            ...
+                        </li>
+                    </ul>
+                </ul>
+             </div>
+
+             <div>
+
+             </div>
+        </body>
+        <footer id="footer" name="footer">
+            <p>Click <a href="https://github.com/gagexhill" target="_blank" rel="noopener noreferrer">@github</a> to see more.</p>
+        </footer>
+    </div> 
 </html>
