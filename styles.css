@@ -13,11 +13,24 @@ a[title] [h1] {
     color: white;
 }
 
-a[href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"] {
+a[href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"], [href="https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors"] {
     color: burlywood;
     font-size: 2em;
     font-style: italic;
-    padding: 1%;
+}
+
+/*nav*/
+.nav {
+    border: 2px solid antiquewhite;
+    padding: 10px;
+}
+
+a[href="#attribute-selectors"] {
+    color: antiquewhite;
+}
+
+a[href="#class-selectors"] {
+    color: antiquewhite;
 }
 
 /*class selectors*/
