@@ -1,3 +1,7 @@
+header {
+    text-decoration: underline;
+}
+
 /*attribute selectors*/
 body {
     background-color: rgba(27, 27, 50, 0.8);
@@ -16,3 +20,8 @@ a[href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"] {
     padding: 1%;
 }
 
+/*class selectors*/
+.li-line {
+    color: burlywood;
+    margin:0 0 10px 0;
+}
